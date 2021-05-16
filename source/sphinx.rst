@@ -116,6 +116,24 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
 
 .. [1] `reStructuredText简明教程 <https://iridescent.ink/HowToMakeDocs/Basic/reST.html?highlight=sublime>`_ 
 
+补全插件 Restructured Text (RST) Snippets
+=========================================
+
+该插件的 github 地址 `github 地址 <https://github.com/mgaitan/sublime-rst-completion>`_ ，里面详细介绍了使用方式和快捷键，特别是对于表格的使用很方便，需要用到表格时最好看一下。
+
+该插件的突出优点：表格，标题 mark 的自动补全(tab)，以及标题的升降级都有相应的快捷键，可以很好缩短编写时间。
+
+该插件的安装虽然可以直接从 Package Control 安装，但是从 Package Control 安装的话就我观察无法修改快捷键。因为【标题的升降级】快捷键和默认的 sublime text 快捷键有冲突(也可能是我安装了某些插件的缘故) [#f1]_ 。但是问题是无法修改，这就很伤。
+所以推荐另一种安装方式。就是直接在 github 下载源码，解压放到 sublime text 默认插件安装的文件夹下就可以了。一般该文件夹的路径大致如下：
+
+.. code-block::
+
+    C:\Users\Administrator\AppData\Roaming\Sublime Text 3\Packages\User
+
+有可能需要重启 sublime text 才能完成安装。总之这样安装完后就能随意改变快捷键了。
+
+.. note:: .. [#f1] 后来我发现，【标题的升降级】有两种快捷键，一种和默认冲突，另一种是按小键盘的 ``ctrl++`` 和 ``ctrl+-`` 则可以正常工作。所以如果在有小键盘的情况下，安装其实完全可以直接用 Package Control 的方式安装，因为比较省事。虽然不完美。
+
 如何使用原始的 html 标签
 ========================
 

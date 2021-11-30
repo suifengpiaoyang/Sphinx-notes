@@ -1,40 +1,42 @@
-******
-Sphinx
-******
+***********
+Sphinx 安装
+***********
 
-Sphinx 的简单使用方式
-======================
-
-1. 安装
---------
 .. code-block:: 
 
     pip install -U Sphinx
 
-2. 快速构建文档
-----------------
+*****************
+Sphinx 的简单使用
+*****************
+
+1. 快速构建文档
+===============
+
 .. code-block:: 
 
     sphinx-quickstart
 
-3. 进行一些项目设置
---------------------
+2. 进行一些项目设置
+===================
+
 .. code-block:: 
    
     You have two options for placing the build directory for Sphinx output.
     Either, you use a directory "_build" within the root path, or you separate
     "source" and "build" directories within the root path.
-    > Separate source and build directories (y/n) [n]: y        
+    > Separate source and build directories (y/n) [n]:
     The project name will occur in several places in the built documentation.
     > Project name:                             # 设置项目名
     > Author name(s): Zhang                     # 设置作者名称
-    > Project release []: 0.0.1                 # 设置项目版本号
-    > Project language [en]: zh_CN              # 最后设置显示语言                    
+    > Project release []:                       # 设置项目版本号
+    > Project language [en]: zh_CN              # 最后设置显示语言
 
 设置完了以后按 ``Enter`` 就可以了。
 
-4. 写作
---------
+3. 写作
+=======
+
 在 source 文件夹下添加一个 demo.rst 的文件，
 然后在 index.rst 上这么修改：
 
@@ -50,15 +52,21 @@ Sphinx 的简单使用方式
 
 然后就可以在 demo.rst 用 reStructuredText 标记语言进行写作了。
 
-5. 生成 html
---------------------
+4. 生成 html
+============
 
 .. code-block:: 
 
     make html
 
-接着就可以在 build 文件夹 html 文件夹下看到生成的文件，
+接着就可以在 build 或者是 _build 文件路径 html 文件夹下看到生成的文件，
 index.html 就是文件主页。主要代码在 source 文件夹下。
+
+
+*************************
+Sphinx 常见问题及解决方式
+*************************
+
 
 部分常用的 reStructuredText 标记
 ================================
@@ -70,6 +78,7 @@ index.html 就是文件主页。主要代码在 source 文件夹下。
     强制换行：     | string  
 
 .. warning:: 在使用引用和脚注时，中括号的后面必须带至少一个空格，不然无法正常生成 html 文件。
+
 
 如何固定主题 alabaster 的侧边栏
 ===============================
@@ -84,6 +93,7 @@ index.html 就是文件主页。主要代码在 source 文件夹下。
 
 附：`alabaster 主题文档地址 <https://alabaster.readthedocs.io/en/latest/customization.html#theme-options>`_ 
 
+
 如何取消主页的 Page source 链接
 ===============================
 
@@ -92,6 +102,7 @@ index.html 就是文件主页。主要代码在 source 文件夹下。
 .. code-block:: python3
 
     html_show_sourcelink = False
+
 
 如何个性化网页图标(设置 favicon)
 ==================================
@@ -102,6 +113,7 @@ index.html 就是文件主页。主要代码在 source 文件夹下。
 .. code-block:: python3
 
     html_favicon = '_static/favicon.ico'
+
 
 reStructuredText sublime text 的三款辅助插件
 ============================================
@@ -115,6 +127,7 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
 在制表时很有用。 [1]_
 
 .. [1] `reStructuredText简明教程 <https://iridescent.ink/HowToMakeDocs/Basic/reST.html?highlight=sublime>`_ 
+
 
 补全插件 Restructured Text (RST) Snippets
 =========================================
@@ -134,6 +147,7 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
 
 .. note:: .. [#f1] 后来我发现，【标题的升降级】有两种快捷键，一种和默认冲突，另一种是按小键盘的 ``ctrl++`` 和 ``ctrl+-`` 则可以正常工作。所以如果在有小键盘的情况下，安装其实完全可以直接用 Package Control 的方式安装，因为比较省事。虽然不完美。
 
+
 如何使用原始的 html 标签
 ========================
 
@@ -142,6 +156,7 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
     .. raw:: html
 
         html tag
+
 
 如何支持中文搜索
 ================
@@ -167,8 +182,10 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
 
 源： `sphinx doc正式支持中文搜索啦 <https://www.chenyudong.com/archives/sphinx-doc-support-chinese-search.html>`_ 
 
+
+***********
 Sphinx 部署
-===========
+***********
 
 .. _Read the Docs: https://readthedocs.org/
 

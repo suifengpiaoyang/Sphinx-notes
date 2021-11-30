@@ -8,7 +8,6 @@ Sphinx 学习笔记
 
 .. toctree::
    :maxdepth: 2
-   :caption: 详细内容:
 
    sphinx.rst
 

@@ -25,7 +25,7 @@ Sphinx 的简单使用
     You have two options for placing the build directory for Sphinx output.
     Either, you use a directory "_build" within the root path, or you separate
     "source" and "build" directories within the root path.
-    > Separate source and build directories (y/n) [n]:
+    > Separate source and build directories (y/n) [n]: y
     The project name will occur in several places in the built documentation.
     > Project name:                             # 设置项目名
     > Author name(s): Zhang                     # 设置作者名称

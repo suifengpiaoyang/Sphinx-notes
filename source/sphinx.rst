@@ -121,15 +121,14 @@ Sphinx 常见问题及解决方式
 reStructuredText sublime text 的三款辅助插件
 ============================================
 
-OmniMarkupPreviewer (用于解析渲染reST等多种标记语法, 必选 ), 
-安装好后, 按快捷键 Ctrl + Alt + O 预览.
+OmniMarkupPreviewer (用于解析渲染reST等多种标记语法, 必选 ), 安装好后, 按快捷键 Ctrl + Alt + O 预览。该插件的浏览器预览是动态预览，每当你编辑目标文件的时候，浏览器都会动态显示你编辑的内容。
 
 reStructuredText Improved (用于语法着色, 可选 , 建议安装 )
 
 Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ), 
 在制表时很有用。 [1]_
 
-.. [1] `reStructuredText简明教程 <https://iridescent.ink/HowToMakeDocs/Basic/reST.html?highlight=sublime>`_ 
+.. [1] `reStructuredText简明教程 <https://iridescent.ink/HowToMakeDocs/Basic/reST.html#id10>`_ 
 
 
 补全插件 Restructured Text (RST) Snippets
@@ -224,9 +223,7 @@ latex 环境安装
 
 首次运行需要安装很多插件，将显示弹出窗口的勾去掉，就会自动安装到完。下次运行相对就快了。
 
-.. note:: note
-
-    生成的文件在当前目录下，总体来说挺不错，生成的目录我个人相当喜欢。不过字体太小了，目前不知道怎么调，不够理想！ **个人还是不太喜欢通过这种方式生成的 pdf，总体来说不太理想！并且环境搭建过程实在是太麻烦了！**
+.. note:: 生成的文件在当前目录下，总体来说挺不错，生成的目录我个人相当喜欢。不过字体太小了，目前不知道怎么调，不够理想！ **个人还是不太喜欢通过这种方式生成的 pdf，总体来说不太理想！并且环境搭建过程实在是太麻烦了！**
 
 
 ****************

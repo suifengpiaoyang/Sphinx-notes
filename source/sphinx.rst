@@ -66,6 +66,73 @@ Sphinx 的简单使用
 index.html 就是文件主页。主要代码在 source 文件夹下。
 
 
+**********************************
+Sphinx 使用 LaTeX 引擎渲染数学公式
+**********************************
+
+添加插件
+========
+
+首先，要在 conf.py 中添加数学引擎，如:
+
+.. code-block:: python
+
+    # conf.py
+    extensions = [
+        'sphinx.ext.mathjax',
+    ]
+
+然后，我们就可以在 html 里面编写基于 LaTeX 的数学公式了，格式如下：
+
+行间公式
+=========
+
+行间公式格式
+
+.. code-block::
+
+    .. math::
+        # write the math code here
+
+
+行内公式
+==========
+
+行内公式格式
+
+.. code-block::
+
+    :math:`# write the math code here`
+
+
+示例
+====
+
+行间公式显示效果：
+
+.. math::
+    f'(x) = \lim_{\triangle x \to 0} \frac{f(x + \triangle x) - f(x)}{\triangle x}
+
+行内公式显示效果：
+
+:math:`f'(x) = \lim_{\triangle x \to 0} \frac{f(x + \triangle x) - f(x)}{\triangle x}`
+
+
+行间公式代码：
+
+.. code-block:: LaTeX
+
+    .. math::
+        f'(x) = \lim_{\triangle x \to 0} \frac{f(x + \triangle x) - f(x)}{\triangle x}
+
+
+行内公式代码：
+
+.. code-block:: LaTeX
+
+    :math:`f'(x) = \lim_{\triangle x \to 0} \frac{f(x + \triangle x) - f(x)}{\triangle x}`
+
+
 *************************
 Sphinx 常见问题及解决方式
 *************************

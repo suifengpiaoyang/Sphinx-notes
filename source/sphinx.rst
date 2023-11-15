@@ -66,6 +66,20 @@ Sphinx 的简单使用
 index.html 就是文件主页。主要代码在 source 文件夹下。
 
 
+***************
+Sphinx 部分语法
+***************
+
+分割线
+======
+
+使用单横线为分割线，和 markdown 一样。但是该线上下两行最好不要有字符串。
+
+.. code-block::
+
+    ---------
+
+
 **********************************
 Sphinx 使用 LaTeX 引擎渲染数学公式
 **********************************
@@ -390,22 +404,21 @@ Sphinx 部署
 
 7.添加 webhook
 
-以下这段英文配置方式来自： [2]_
+2023-11-15 15:51:43 Update
 
-GitHub
+以下这段英文配置方式来自： add webhook [2]_
 
-* Go to the ``Settings`` page for your project
-* Click ``Webhooks`` > ``Add webhook``
-* For **Payload URL**, use the URL of the integration on Read the Docs, found on the project’s ``Admin`` > ``Integrations`` page. You may need to prepend https:// to the URL.
-* For **Content type**, both application/json and application/x-www-form-urlencoded work
-* Leave the **Secrets** field blank
-* Select **Let me select individual events**, and **mark Branch or tag creation**, **Branch or tag deletion** and **Pushes** events
-* Ensure **Active** is enabled; it is by default
-* Finish by clicking **Add webhook**. You may be prompted to enter your GitHub password to confirm your action.
 
-Payload URL 就是第 6 步所得的地址。
+- Go to the **Settings** page for your **GitHub project**
+- Click **Webhooks** > **Add webhook**
+- For **Payload URL**, use the URL of the integration on your **Read the Docs project**, found on the project’s **Admin** > **Integrations** page. You may need to prepend *https://* to the URL.
+- For **Content type**, both *application/json* and *application/x-www-form-urlencoded* work
+- Fill the **Secret** field with the value from the integration on Read the Docs
+- Select **Let me select individual events**, and mark **Branch or tag creation**, **Branch or tag deletion**, **Pull requests** and **Pushes** events
+- Ensure **Active** is enabled; it is by default
+- Finish by clicking **Add webhook**. You may be prompted to enter your GitHub password to confirm your action.
 
-.. [2] `add webhook <https://docs.readthedocs.io/en/stable/webhooks.html#github>`_
+.. [2] `add webhook <https://docs.readthedocs.io/en/stable/guides/setup/git-repo-manual.html#manual-integration-setup>`_
 
 
 这些配置完成后，我们平时只要 push 到 github 仓库就会自动同步到 Read the Docs 更新，相当方便。

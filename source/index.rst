@@ -11,9 +11,11 @@ Sphinx 学习笔记
 
    sphinx.rst
 
-.. Indices and tables
-.. ==================
+索引
+==================
 
-.. * :ref:`genindex`
+* :ref:`genindex`
+* :ref:`search`
+
+
 .. * :ref:`modindex`
-.. * :ref:`search`

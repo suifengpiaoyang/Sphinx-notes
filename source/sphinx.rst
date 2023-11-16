@@ -80,6 +80,8 @@ Sphinx 部分语法
     ---------
 
 
+.. index:: Key-数学公式
+
 **********************************
 Sphinx 使用 LaTeX 引擎渲染数学公式
 **********************************
@@ -188,8 +190,11 @@ Sphinx 常见问题及解决方式
     html_show_sourcelink = False
 
 
+.. index:: Key-图标
+
 如何个性化网页图标(设置 favicon)
 ==================================
+
 
 将目标图片 favicon.ico 放入 _static 文件夹内，然后
 在该项目的 conf.py 下加入以下语句
@@ -198,6 +203,8 @@ Sphinx 常见问题及解决方式
 
     html_favicon = '_static/favicon.ico'
 
+
+.. index:: Key-自定义CSS
 
 如何更新默认的CSS
 =================
@@ -222,6 +229,8 @@ Sphinx 常见问题及解决方式
 
 .. note:: 这种方法的 css 不会破坏原来已有的 css。如果设置了相同的属性，my_style.css 会覆盖掉原来的属性。另有一种通过设置 html_style 的方法直接取消掉默认的 css 完全用自己的 css 代替的方式，我觉得不理想。还是这种方式比较好！
 
+
+.. index:: Key-插件
 
 reStructuredText sublime text 的三款辅助插件
 ============================================
@@ -264,6 +273,8 @@ Restructured Text (RST) Snippets (用于自动补全, 可选, 但推荐安装 ),
 
         html tag
 
+
+.. index:: Key-中文搜索
 
 如何支持中文搜索
 ================

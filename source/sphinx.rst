@@ -199,6 +199,30 @@ Sphinx 常见问题及解决方式
     html_favicon = '_static/favicon.ico'
 
 
+如何更新默认的CSS
+=================
+
+此方法来自： `How to add custom css file to Sphinx? <https://stackoverflow.com/questions/23462494/how-to-add-custom-css-file-to-sphinx#answer-37980230>`_ 
+
+在 _static 文件夹下新建一个 my_style.css 的文件。在该文件中写上自己想增加的自定义的 css style，比如：
+
+.. code-block::
+
+    a:visited {
+        color: none;
+    }
+
+在 conf.py 文件中增加以下代码：
+
+.. code-block:: python
+
+    def setup(app):
+        app.add_css_file('_static/my_style.css')
+
+
+.. note:: 这种方法的 css 不会破坏原来已有的 css。如果设置了相同的属性，my_style.css 会覆盖掉原来的属性。另有一种通过设置 html_style 的方法直接取消掉默认的 css 完全用自己的 css 代替的方式，我觉得不理想。还是这种方式比较好！
+
+
 reStructuredText sublime text 的三款辅助插件
 ============================================
 

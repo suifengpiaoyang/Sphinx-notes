@@ -12,7 +12,7 @@ Sphinx 学习笔记
    sphinx.rst
 
 索引
-==================
+=====
 
 * :ref:`genindex`
 * :ref:`search`

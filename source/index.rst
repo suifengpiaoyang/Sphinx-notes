@@ -15,7 +15,7 @@ Sphinx 学习笔记
 =====
 
 * :ref:`genindex`
-* :ref:`search`
 
 
+.. * :ref:`search`
 .. * :ref:`modindex`

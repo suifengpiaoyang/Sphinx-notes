@@ -80,6 +80,31 @@ Sphinx 部分语法
     ---------
 
 
+交叉引用
+========
+
+锚点的放置
+----------
+
+下面的 `_random-seed` 是我自定义写的，你要写成自己想要的名字。
+
+.. code-block::
+
+    .. _random-seed:
+
+锚点的放置可以看到它遵循一定的格式。上面除了 `random-seed` 之外，都是格式。第一个单下划线也算。
+
+这个锚点一般放置在标题前面。
+
+锚点的引用
+----------
+
+.. code-block::
+
+    :ref:`random-seed`
+
+我们可以在其他文档的任何地方直接使用上面的方式，将锚点引用到目标位置。
+
 .. index:: Z-数学公式
 
 **********************************
@@ -229,6 +254,38 @@ Sphinx 常见问题及解决方式
 
 .. note:: 这种方法的 css 不会破坏原来已有的 css。如果设置了相同的属性，my_style.css 会覆盖掉原来的属性。另有一种通过设置 html_style 的方法直接取消掉默认的 css 完全用自己的 css 代替的方式，我觉得不理想。还是这种方式比较好！
 
+
+如何显示图片
+===============
+
+显示图片的默认代码格式：
+
+.. code-block::
+
+    .. figure:: image_path
+
+       caption
+
+可以通过参数改变显示的图片的大小和标题。
+
+示例：
+
+将目标图片放到 _static 文件夹下，通过
+
+.. index:: Z-显示图片
+
+.. code-block::
+
+    .. figure:: _static/SigmoidFunction.png
+        :alt: Sigmoid Function
+        :width: 540
+        :height: 300
+
+        Sigmoid Function
+
+这种方式来显示图片。
+
+weight 和 height 可以只设置一个，以保留原来的图片比例。
 
 .. index:: Z-索引
 

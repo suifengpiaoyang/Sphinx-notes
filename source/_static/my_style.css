@@ -1,0 +1,8 @@
+a:visited {
+    color: none;
+}
+
+div.sphinxsidebar {
+    max-height: 93%;
+    overflow-y: auto;
+}

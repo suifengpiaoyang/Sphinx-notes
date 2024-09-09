@@ -24,6 +24,8 @@ author = 'Zhang'
 # The full version, including alpha/beta/rc tags
 release = ''
 
+def setup(app):
+    app.add_css_file('my_style.css')
 
 # -- General configuration ---------------------------------------------------
 
@@ -60,9 +62,10 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-# html_theme_options = {
-#     'fixed_sidebar': True,
-# }
 html_show_sourcelink = False
 html_favicon = '_static/favicon.ico'
 html_search_language = 'zh'
+
+html_theme_options = {
+    'fixed_sidebar': True,
+}

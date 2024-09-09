@@ -9,7 +9,11 @@ Sphinx 学习笔记
 .. toctree::
    :maxdepth: 2
 
+   quickstart/index.rst
+   sphinx_grammar.rst
    sphinx.rst
+   sphinx_deploy.rst
+   not_important.rst
 
 索引
 =====

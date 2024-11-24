@@ -32,8 +32,6 @@ Sphinx 实用场景
 附：`alabaster 主题文档地址 <https://alabaster.readthedocs.io/en/latest/customization.html#theme-options>`_ 
 
 
-.. index:: Z-左边栏索引
-
 如何给 alabaster 增加索引
 =========================
 

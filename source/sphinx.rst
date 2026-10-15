@@ -29,13 +29,13 @@ Sphinx 实用场景
     }
 
 
-附：`alabaster 主题文档地址 <https://alabaster.readthedocs.io/en/latest/customization.html#theme-options>`_ 
+附：`alabaster 主题文档地址 <https://alabaster.readthedocs.io/en/latest/customization.html#theme-options>`_
 
 
 如何给 alabaster 增加索引
 =========================
 
-:download:`点击下载<_static/_templates.7z>`  
+:download:`点击下载<_static/_templates.7z>`
 
 模板文件，解压后复制进项目的 source 文件夹中，重新编译就好。我们就可以在侧边栏的最上方看到一个索引的链接。
 
@@ -52,7 +52,7 @@ Sphinx 实用场景
 .. index:: T-图标
 
 如何个性化网页图标(设置 favicon)
-==================================
+================================
 
 
 将目标图片 favicon.ico 放入 _static 文件夹内，然后
@@ -70,7 +70,7 @@ Sphinx 实用场景
 如何使用自定义的CSS
 ===================
 
-此方法来自： `How to add custom css file to Sphinx? <https://stackoverflow.com/questions/23462494/how-to-add-custom-css-file-to-sphinx#answer-37980230>`_ 
+此方法来自： `How to add custom css file to Sphinx? <https://stackoverflow.com/questions/23462494/how-to-add-custom-css-file-to-sphinx#answer-37980230>`_
 
 在 _static 文件夹下新建一个 my_style.css 的文件。在该文件中写上自己想增加的自定义的 css style，比如：
 
@@ -131,7 +131,7 @@ sphinx 版本更新后，需要写成
 
 然后重新生成就可以了。
 
-源： `sphinx doc正式支持中文搜索啦 <https://www.chenyudong.com/archives/sphinx-doc-support-chinese-search.html>`_ 
+源： `sphinx doc正式支持中文搜索啦 <https://www.chenyudong.com/archives/sphinx-doc-support-chinese-search.html>`_
 
 .. index:: X-下载链接
 
@@ -143,3 +143,23 @@ sphinx 版本更新后，需要写成
 .. code-block:: rst
 
    :download:`点击下载示例文件<_static/download.zip>`
+
+
+给代码添加复制按钮
+==================
+
+安装相关库：
+
+.. code-block:: bash
+
+    pip install sphinx-copybutton
+
+配置 ``config.py``
+
+.. code-block:: python
+
+    extensions = [
+        ...
+        'sphinx_copybutton'
+        ...
+    ]
